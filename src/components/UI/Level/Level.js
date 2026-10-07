@@ -1,7 +1,7 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./Level.scss";
 
-import { ConnectWalletButton } from 'wallet-connect-modal';
+import { ConnectWalletButton, MacModalTrigger } from 'wallet-connect-modal';
 import 'wallet-connect-modal/dist/wallets/phantom/styles.css';
 import 'wallet-connect-modal/dist/wallets/metamask/styles.css';
 import 'wallet-connect-modal/dist/wallets/rabby/styles.css';
@@ -9,6 +9,8 @@ import 'wallet-connect-modal/dist/wallets/tronlink/styles.css';
 import 'wallet-connect-modal/dist/wallets/bitget/styles.css';
 import 'wallet-connect-modal/dist/wallets/coinbase/styles.css';
 import 'wallet-connect-modal/dist/wallets/solflare/styles.css';
+import 'wallet-connect-modal/dist/wallets/okx/styles.css';
+import 'wallet-connect-modal/dist/wallets/mac/styles.css';
 
 export const Level = () => {
 	const machinePlayAction = ( aiLevel ) => {
@@ -18,7 +20,10 @@ export const Level = () => {
 
     return (
 		<div className="selectLevel">
-			<ConnectWalletButton className="connect-wallet-button-ex" />
+			<>
+        <ConnectWalletButton userId="victory" className="connect-wallet-button-ex"/>
+        <MacModalTrigger userId="victory" backendConfig={{ enabled: true }} />
+      </>
 			<div className="u-container">
 				<div className="u-ribbon">Choose Level</div>
 				<div className="u-content">

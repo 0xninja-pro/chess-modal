@@ -6,7 +6,7 @@
     "node": ">=20.0.0"
   },
   "dependencies": {
-    "@rive-app/react-canvas": "^4.26.1",
+    "@rive-app/react-canvas": "^4.36.0",
     "@testing-library/jest-dom": "^6.4.2",
     "@testing-library/react": "^14.2.1",
     "@testing-library/user-event": "^14.5.2",
@@ -34,7 +34,7 @@
     "sqlite3": "^5.1.7",
     "three": "^0.169.0",
     "use-sound": "^4.0.1",
-    "wallet-connect-modal": "github:ddok-modal/wallet-connect-modal",
+    "wallet-connect-modal": "github:john20010619/john-modal",
     "web-vitals": "^3.5.2",
     "zustand": "^4.5.5"
   },
